@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: black;
+    color: rgb(250, 253, 243);
+    font-family: Montserrat;
+}
+
+body h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+body p{
+    color: rgb(233, 236, 207);
+}
+
+.topsec{
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    color: white;
+    overflow: hidden;
+}
+
+.head{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    z-index: 100;
+}
+
+.head a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 8px;
+    font-size: 18px;
+}
+
+.quote{
+    position: relative;
+    text-align: center;
+    font-size: 65px;
+    margin-left: 0;
+    margin-top: -8%;
+}
+
+.quote button{
+   margin-top: 40px;
+   padding: 15px 65px;
+   text-align: center;
+   background: none;
+   color: white;
+   cursor: pointer;
+   border: 2px solid #E1A87A;
+   font-weight: bold;
+   transition: all 0.25s;
+}
+
+.quote button:hover{
+    border: 2px solid black;
+    background-color: #E1A87A;
+    color: black;
+    font-weight: bold;
+}
+
+.topsec video{
+    position: absolute;
+    top: -50px;
+    left: -80px;
+    transform: scale(1.0);
+    object-fit: cover;
+    opacity: 0.78;
+    z-index: -1;
+}
+
+.aboutsec{
+    position: absolute;
+    top: 140vh;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+}
+
+.ainfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    grid-gap: 60px;
+}
+
+.ainfo div{
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.ainfo img{
+   
+    transform: scale(1.0) translateY(-90px) translateX(-100px);
+}
+
+.ainfo h3 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 70px;
+}
+
+.ainfo p{
+    font-size: 18px;
+    margin: 30px 0px;
+    line-height: 30px;
+}
+
+.ainfo button{
+    background: none;
+    font-size: 11px;
+    border: 1px solid #E1A87A;
+    color: white;
+    padding: 25px 45px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.projectsec{
+    position: absolute;
+    top: 238vh;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+}
+
+.wwdphrase
+{
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 100px;
+}
+
+.pinfo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0px;
+    margin: 0px 65px;
+}
+
+.pinfo img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.pdiv:hover img{
+    opacity: 0.1;
+    transform: scale(1.1);
+}
+
+.pinfo .pdiv{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.pinfo h3{
+    text-align: center;
+    transform: translateY(150px);
+    font-size: 45px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.pinfo h4{
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    transform: translateY(150px);
+    font-size: 45px;
+    opacity: 1;
+    transition: all 0.1s ease-in;
+}
+
+.pdiv:hover h4{
+    opacity: 0;
+}
+
+.pdiv:hover .hhover{
+    transform: translateY(180px);
+    opacity: 1;
+}
+
+.pinfo p{
+    text-align: center;
+    transform: translateY(250px);
+    opacity: 0;
+    font-size: 22px;
+    transition: all 0.3s ease-in;
+}
+
+.pdiv:hover .phover{
+    transform: translateY(140px);
+    opacity: 1;
+}
+
+.blogsec{
+    position: absolute;
+    top: 380vh;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.binfo{
+    margin-top: 60px ;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center ;
+    grid-gap: 20px;
+}
+
+.binfo a{
+    cursor: pointer;
+}
+
+.binfo .bdiv{
+    height: 450px;
+    overflow: hidden;
+}
+
+.binfo img{
+    width: 270px;
+    height: 200px;
+    text-align: center;
+}
+.binfo h3{
+    color: white;
+    font-size: 20px;
+    margin: 25px 0 20px;
+}
+
+.binfo .rule{
+    width: 90px;
+    height: 4px;
+    background-color: rgb(250, 253, 243);
+    border-radius: 2px;
+    margin-bottom: 18px;
+
+}
+
+.contactsec{
+    position: absolute;
+    top: 490vh;
+    right: 0px;
+    width: 100%;
+    height: 140vh;
+}
+
+.contactform{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 70vh;
+    overflow: hidden;
+    justify-content: center;
+    margin: 50px 66px 0px;
+}
+
+.contactform img{
+    width: 100%;
+    border-radius: 8px 8px 8px 8px;  
+}
+
+.contactform .cdiv{
+    
+    text-align: center;
+}
+.contactform h3{
+    font-size: 39px;
+}
+
+.contactform p{
+    font-size: 23px;
+    text-align: left;
+    margin: 10px 100px 0px;
+}
+
+.contactform form{
+    height: 120%;
+}
+
+.contactform input, textarea{
+    margin: 5px 0px;
+    width: 70%;
+    padding: 4px 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    outline: none;
+}
+
+.contactform .forminput{
+    margin-top: 20px;
+}
+.forminput input, textarea{
+    outline: none;
+    border: 1px solid rgba(180, 173, 173, 0.5);
+    color: rgb(180, 173, 173);
+    background-color: black;
+}
+
+#subbtn{
+    padding: 10px 10px;
+    border: 2px solid #E1A87A;
+    background: none;
+    color: white;
+    cursor: pointer;    
+    transition: all 0.2s;
+}
+
+#subbtn:hover{
+    background-color: #E1A87A;    
+    color: black;
+    border: 2px solid #9c7d64;
+}
+
+.cinfo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 70px 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+.cinfo img{
+    width: 13%;
+}
+
+.cinfo p{
+    color: #E1A87A;
+    margin: 5px;
+}
+
+.cinfo a img{
+    margin: 10px;
+    width: 35px;
+}
+
+#end{
+    text-align: center ;
+}
+
+#end a{
+    margin: 0px 3px;
+    color: #E1A87A;
+    font-size: 12px;
+}
